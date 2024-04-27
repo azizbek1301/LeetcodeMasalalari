@@ -30,9 +30,9 @@ public class Solution
         }
 
         string ziGZag = "";
-        foreach (var item in asArr)
+        foreach (var i in asArr)
         {
-            ziGZag += item.ToString();
+            ziGZag += i.ToString();
         }
         return ziGZag;
     }

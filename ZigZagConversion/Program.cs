@@ -2,38 +2,31 @@
 
 using System.Text;
 
+var sol = new Solution();
+Console.WriteLine( sol.Convert("PAYPALISHIRING", 3));
+
+
 public class Solution
 {
     public string Convert(string s, int numRows)
     {
-        if(numRows==1)
+        if (numRows == 1) return s;
+
+        StringBuilder result = new StringBuilder();
+        int cycleLen = 2 * numRows - 2;
+
+        for (int i = 0; i < numRows; i++)
         {
-            return s;
-        }
-        StringBuilder[] asArr= new StringBuilder[numRows];
-        int r= 0;
-        bool goingD = true;
-        foreach (var item in s)
-        {
-            asArr[r].Append(item);
-            if(r==0)
+            for (int j = 0; j + i < s.Length; j += cycleLen)
             {
-                goingD = true;
-
+                result.Append(s[j + i]);
+                if (i != 0 && i != numRows - 1 && j + cycleLen - i < s.Length)
+                {
+                    result.Append(s[j + cycleLen - i]);
+                }
             }
-            else if (r+1== numRows)
-            {
-                goingD= false;
-            }
-            r=goingD ? r+1 : r-1;
-
         }
 
-        string ziGZag = "";
-        foreach (var i in asArr)
-        {
-            ziGZag += i.ToString();
-        }
-        return ziGZag;
+        return result.ToString();
     }
 }

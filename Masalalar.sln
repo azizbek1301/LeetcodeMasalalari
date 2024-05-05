@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reshape-the-matrix", "resha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse Integer", "Reverse Integer\Reverse Integer.csproj", "{852FCBD0-9082-4893-8B3F-72B2A42DB6B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String to Integer", "String to Integer\String to Integer.csproj", "{1EDDAA3C-A07D-4EFB-BCDD-51B7D0E87D9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "String to Integer", "String to Integer\String to Integer.csproj", "{1EDDAA3C-A07D-4EFB-BCDD-51B7D0E87D9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Container With Most Water", "Container With Most Water\Container With Most Water.csproj", "{D051D1A2-FE8E-41A0-B049-B236260CB8CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{1EDDAA3C-A07D-4EFB-BCDD-51B7D0E87D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EDDAA3C-A07D-4EFB-BCDD-51B7D0E87D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EDDAA3C-A07D-4EFB-BCDD-51B7D0E87D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D051D1A2-FE8E-41A0-B049-B236260CB8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D051D1A2-FE8E-41A0-B049-B236260CB8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D051D1A2-FE8E-41A0-B049-B236260CB8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D051D1A2-FE8E-41A0-B049-B236260CB8CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
